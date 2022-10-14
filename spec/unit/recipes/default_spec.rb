@@ -11,4 +11,8 @@ describe 'assignment_install_apache2::default' do
     expect(chef_run).to include_recipe('assignment_install_apache2::config')
   end
   
+   it 'includes the config recipe' do
+    expect(chef_run).to include_recipe('assignment_install_apache2::config')
+  end
+  
 end
